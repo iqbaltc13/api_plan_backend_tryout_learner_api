@@ -1,6 +1,6 @@
 1. Get Materi:
     Method : GET
-    Endpoint : materi/{category_id}/{type_id}
+    Endpoint : materi/index/{category_id}/{type_id}
     Response Status : 200
     Response : 
 
@@ -67,7 +67,7 @@
     }
 2. Get History Pemabayaran :
     Method : GET
-    Endpoint : payment/
+    Endpoint : payment/index/
     Response Status : 200
     Response : 
 
@@ -372,9 +372,230 @@
             },
             },
         ]
-    
-                    
-                            
-        
-        
     }
+
+3. Get List Tryout :
+    Method : GET
+    Endpoint : tryout/index?search=
+    Response Status : 200
+    Response : 
+
+    {
+        "response_code" : 200,
+        "message"       : "Success",
+        "data"          : 
+        {#3678
+         id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+         name: "Try out beta 1 oke",
+         keterangan: "<p>Free try out on beta 1 oke</p>",
+         class_id: "9b6de1fc-c318-47fc-ab21-b94dacd00003",
+         max_peserta: 40,
+         nilai_per_soal: 1,
+         is_group_by_soal_category: true,
+         created_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+         updated_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+         deleted_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+         created_at: "2023-09-12 04:09:59",
+         updated_at: "2023-09-20 09:59:01",
+         deleted_at: null,
+         kloters: Illuminate\Database\Eloquent\Collection {#3704
+           all: [
+             App\Models\KloterUjian {#3709
+               id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               master_ujian_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               name: "Kloter 1  yeay Try out beta 1 oke",
+               is_waktu_pelaksanaan: 2,
+               durasi_menit: 45,
+               start_datetime: null,
+               end_datetime: null,
+               created_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               updated_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               deleted_by_id: null,
+               created_at: "2023-09-26 10:03:00",
+               updated_at: "2023-09-27 07:48:28",
+               deleted_at: null,
+               +date_time_start_flatpickr: null,
+               +date_time_end_flatpickr: null,
+               +date_time_start_list: null,
+               +date_time_end_list: null,
+             },
+             App\Models\KloterUjian {#3710
+               id: "9b6de1fc-c318-47fc-ab21-b94dacd00002",
+               master_ujian_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               name: "Kloter 2 add time Try out beta 1 oke",
+               is_waktu_pelaksanaan: 1,
+               durasi_menit: 890,
+               start_datetime: "2023-09-27 08:00:00",
+               end_datetime: "2023-09-27 22:50:00",
+               created_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               updated_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               deleted_by_id: null,
+               created_at: "2023-09-26 10:04:53",
+               updated_at: "2023-09-27 09:23:10",
+               deleted_at: null,
+               +date_time_start_flatpickr: "2023-09-27 08:00",
+               +date_time_end_flatpickr: "2023-09-27 22:50",
+               +date_time_start_list: "Wed, 27 Sep 2023 08:00",
+               +date_time_end_list: "Wed, 27 Sep 2023 22:50",
+             },
+             App\Models\KloterUjian {#3711
+               id: "9b6de1fc-c318-47fc-ab21-b94dacd00003",
+               master_ujian_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               name: "Kloter 3 nice Try out beta 1 oke",
+               is_waktu_pelaksanaan: 0,
+               durasi_menit: 60,
+               start_datetime: null,
+               end_datetime: null,
+               created_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               updated_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               deleted_by_id: null,
+               created_at: "2023-09-26 10:06:12",
+               updated_at: "2023-09-27 09:34:31",
+               deleted_at: null,
+               +date_time_start_flatpickr: null,
+               +date_time_end_flatpickr: null,
+               +date_time_start_list: null,
+               +date_time_end_list: null,
+             },
+           ],
+         },
+         +keterangan_no_html: "Free try out on beta 1 oke",
+       },
+       App\Models\MasterUjian {#3685
+         id: "9b6de1fc-c318-47fc-ab21-b94dacd00003",
+         name: "Tryout 44",
+         keterangan: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam turpis eros, pellentesque sed dictum at, hendrerit eu neque. Curabitur a egestas odio, vel viverra diam. Maecenas sit amet est nec diam dictum elementum. Maecenas mi erat, semper sollicitudin lacinia molestie, sodales eu sem. Phasellus porta ultricies pulvinar. Duis eu mauris metus. Suspendisse sed feugiat justo. kjhj</p>",
+         class_id: "9b6de1fc-c318-47fc-ab21-b94dacd00003",
+         max_peserta: 35,
+         nilai_per_soal: 4,
+         is_group_by_soal_category: false,
+         created_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+         updated_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+         deleted_by_id: null,
+         created_at: "2023-09-14 04:16:17",
+         updated_at: "2023-10-12 04:25:54",
+         deleted_at: null,
+         kloters: Illuminate\Database\Eloquent\Collection {#3696
+           all: [
+             App\Models\KloterUjian {#3712
+               id: "9b6de1fc-c318-47fc-ab21-b94dacd00005",
+               master_ujian_id: "9b6de1fc-c318-47fc-ab21-b94dacd00003",
+               name: "kloter B",
+               is_waktu_pelaksanaan: 1,
+               durasi_menit: 180,
+               start_datetime: "2023-10-31 07:00:00",
+               end_datetime: "2023-10-31 10:00:00",
+               created_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               updated_by_id: null,
+               deleted_by_id: null,
+               created_at: "2023-10-12 04:15:28",
+               updated_at: "2023-10-12 04:15:28",
+               deleted_at: null,
+               +date_time_start_flatpickr: "2023-10-31 07:00",
+               +date_time_end_flatpickr: "2023-10-31 10:00",
+               +date_time_start_list: "Tue, 31 Oct 2023 07:00",
+               +date_time_end_list: "Tue, 31 Oct 2023 10:00",
+             },
+             App\Models\KloterUjian {#3713
+               id: "9b6de1fc-c318-47fc-ab21-b94dacd00004",
+               master_ujian_id: "9b6de1fc-c318-47fc-ab21-b94dacd00003",
+               name: "Kloter A",
+               is_waktu_pelaksanaan: 2,
+               durasi_menit: 1,
+               start_datetime: null,
+               end_datetime: null,
+               created_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               updated_by_id: "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+               deleted_by_id: null,
+               created_at: "2023-10-12 04:14:32",
+               updated_at: "2023-10-12 04:15:42",
+               deleted_at: null,
+               +date_time_start_flatpickr: null,
+               +date_time_end_flatpickr: null,
+               +date_time_start_list: null,
+               +date_time_end_list: null,
+             },
+           ],
+         },
+         +keterangan_no_html: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam turpis eros, pellentesque sed dictum at, hendrerit eu neque. Curabitur a egestas odio, vel viverra diam. Maecenas sit amet est nec diam dictum elementum. Maecenas mi erat, semper sollicitudin lacinia molestie, sodales eu sem. Phasellus porta ultricies pulvinar. Duis eu mauris metus. Suspendisse sed feugiat justo. kjhj",
+       },
+     ],
+   }
+>>> $dataMasterUjiansJson  = json_decode($dataMasterUjians);
+=> [
+     {
+       +"id": "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+       +"name": "Try out beta 1 oke",
+       +"keterangan": "<p>Free try out on beta 1 oke</p>",
+       +"class_id": "9b6de1fc-c318-47fc-ab21-b94dacd00003",
+       +"max_peserta": 40,
+       +"nilai_per_soal": 1,
+       +"is_group_by_soal_category": true,
+       +"created_by_id": "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+       +"updated_by_id": "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+       +"deleted_by_id": "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+       +"created_at": "2023-09-12T04:09:59.000000Z",
+       +"updated_at": "2023-09-20T09:59:01.000000Z",
+       +"deleted_at": null,
+       +"keterangan_no_html": "Free try out on beta 1 oke",
+       +"kloter": 
+         {
+           +"id": "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+           +"master_ujian_id": "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+           +"name": "Kloter 1  yeay Try out beta 1 oke",
+           +"is_waktu_pelaksanaan": 2,
+           +"durasi_menit": 45,
+           +"start_datetime": null,
+           +"end_datetime": null,
+           +"created_by_id": "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+           +"updated_by_id": "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+           +"deleted_by_id": null,
+           +"created_at": "2023-09-26T10:03:00.000000Z",
+           +"updated_at": "2023-09-27T07:48:28.000000Z",
+           +"deleted_at": null,
+           +"date_time_start_flatpickr": null,
+           +"date_time_end_flatpickr": null,
+           +"date_time_start_list": null,
+           +"date_time_end_list": null,
+         },
+         
+       
+     },
+     {
+       +"id": "9b6de1fc-c318-47fc-ab21-b94dacd00003",
+       +"name": "Tryout 44",
+       +"keterangan": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam turpis eros, pellentesque sed dictum at, hendrerit eu neque. Curabitur a egestas odio, vel viverra diam. Maecenas sit amet est nec diam dictum elementum. Maecenas mi erat, semper sollicitudin lacinia molestie, sodales eu sem. Phasellus porta ultricies pulvinar. Duis eu mauris metus. Suspendisse sed feugiat justo. kjhj</p>",
+       +"class_id": "9b6de1fc-c318-47fc-ab21-b94dacd00003",
+       +"max_peserta": 35,
+       +"nilai_per_soal": 4,
+       +"is_group_by_soal_category": false,
+       +"created_by_id": "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+       +"updated_by_id": "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+       +"deleted_by_id": null,
+       +"created_at": "2023-09-14T04:16:17.000000Z",
+       +"updated_at": "2023-10-12T04:25:54.000000Z",
+       +"deleted_at": null,
+       +"keterangan_no_html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam turpis eros, pellentesque sed dictum at, hendrerit eu neque. Curabitur a egestas odio, vel viverra diam. Maecenas sit amet est nec diam dictum elementum. Maecenas mi erat, semper sollicitudin lacinia molestie, sodales eu sem. Phasellus porta ultricies pulvinar. Duis eu mauris metus. Suspendisse sed feugiat justo. kjhj",
+       +"kloters": 
+         {
+           +"id": "9b6de1fc-c318-47fc-ab21-b94dacd00005",
+           +"master_ujian_id": "9b6de1fc-c318-47fc-ab21-b94dacd00003",
+           +"name": "kloter B",
+           +"is_waktu_pelaksanaan": 1,
+           +"durasi_menit": 180,
+           +"start_datetime": "2023-10-31 07:00:00",
+           +"end_datetime": "2023-10-31 10:00:00",
+           +"created_by_id": "9b6de1fc-c318-47fc-ab21-b94dacd00001",
+           +"updated_by_id": null,
+           +"deleted_by_id": null,
+           +"created_at": "2023-10-12T04:15:28.000000Z",
+           +"updated_at": "2023-10-12T04:15:28.000000Z",
+           +"deleted_at": null,
+           +"date_time_start_flatpickr": "2023-10-31 07:00",
+           +"date_time_end_flatpickr": "2023-10-31 10:00",
+           +"date_time_start_list": "Tue, 31 Oct 2023 07:00",
+           +"date_time_end_list": "Tue, 31 Oct 2023 10:00",
+         }
+         
+     },
+    ]
